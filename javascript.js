@@ -1,3 +1,3 @@
-import profile from ".profile.js";
+import profile from "./profile.js";
 
 console.log(profile);
