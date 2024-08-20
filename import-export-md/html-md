@@ -1,0 +1,16 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+  </head>
+  <body>
+    <h1>Javascriptの基本と非同期処理を学ぶ</h1>
+    <script type="module" src="./javascript.js"></script>
+  </body>
+</html>
+```
+
+- `type="module"`の記述とパスの指定を正しく行うことが必要不可欠
