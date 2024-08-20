@@ -1,4 +1,3 @@
-import profile, { name, age } from "./profile.js";
+import profile from ".profile.js";
 
-console.log(name);
-console.log(age);
+console.log(profile);
