@@ -1,3 +1,3 @@
-export const square = (length) => {
+export default (length) => {
   return length * length;
 };
