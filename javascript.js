@@ -1,5 +1,13 @@
-// utils.jsに存在するspuare関数をインポートして利用する
-// ｛｝の意味は、utils.jsに存在する関数を全てインポートするという意味
-import spuare from "./utils.js";
+// 配列の分割代入
 
-console.log(spuare(5)); // 25
+// []の中に変数を入れることで、配列の中身を変数に代入できる
+const array = ["Ham", 35];
+// nicknameには"Ham"が代入される
+const nickname = array[0];
+// ageには35が代入される
+const age = arrar[1];
+
+// 配列では0から始まるので、0番目の要素を取得するときはarray[0]とする
+
+console.log(nickname); // Ham
+console.log(age); // 35
