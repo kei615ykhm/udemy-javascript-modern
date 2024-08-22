@@ -1,5 +1,5 @@
-console.log(1);
-// settimeoutというapiを使って、1秒後にコンソールに2を表示し、さらに1秒後にコンソールに3を表示する
+console.log("start");
+
 setTimeout(() => {
   console.log("1秒経ったよ");
   setTimeout(() => {
@@ -10,4 +10,4 @@ setTimeout(() => {
   }, 1000);
 }, 1000);
 
-console.log(3);
+console.log("end");
