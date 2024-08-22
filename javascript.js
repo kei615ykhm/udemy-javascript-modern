@@ -10,6 +10,8 @@ request.send(null);
 // リクエスト メソッド:GET
 // ステータス コード:200 OK
 
-console.log(request);
-
-// コンソールに表示されていれば、リクエストが成功している
+// レスポンスの確認
+if (request.status === 200) {
+  // レスポンスの表示
+  console.log(request.response);
+}
