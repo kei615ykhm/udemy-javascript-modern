@@ -1,4 +1,4 @@
-// オブジェクトの分割代入
+//オブジェクトの分割代入
 
 // ｛｝の中にオブジェクトを入れると、オブジェクトのプロパティを変数として取り出すことができる
 const profile = { nickname: "Ham", age: 45 };
@@ -13,10 +13,9 @@ console.log(rest); // { age: 45 }
 
 // オブジェクトの分割代入は、関数の引数にも使える
 
-const printObject = (profile) => {
-  // 引数profileのnicknameプロパティの値を取り出して表示(.はオブジェクトのプロパティにアクセスする演算子)
-  // この場合、profileというオブジェクトのnicknameというプロパティにアクセスしている
-  console.log(`nickname: ${profile.nickname}`);
+// nicknameだけを引数として受け取る場合は、引数にオブジェクトを指定して、その中でnicknameプロパティを分割代入する
+const printObject = ({ nickname }) => {
+  console.log(`nickname: ${nickname}`);
 };
 
 printObject(profile); // nickname: Ham
