@@ -2,8 +2,11 @@
 
 // ｛｝の中にオブジェクトを入れると、オブジェクトのプロパティを変数として取り出すことができる
 const profile = { nickname: "Ham", age: 45 };
-// このコードはnicknameプロパティを取り出して、nicknameという変数に代入している
-const { nickname } = profile;
+// restにはnicknameプロパティ以外のプロパティが代入される
+const { nickname, ...rest } = profile;
 
 // nicknameプロパティの値が変数nicknameに代入されている
 console.log(nickname); // Ham
+
+// nicknameプロパティ以外のプロパティがオブジェクトとしてrestに代入されている
+console.log(rest); // { age: 45 }
