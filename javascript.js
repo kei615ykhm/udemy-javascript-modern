@@ -1,8 +1,18 @@
-// 一行で書かれている場合のmapメソッド
+// 同期処理の原則
 
-const numbers = [5, 3, 4];
-// この書き方をすると、暗黙的にreturnされる
-const square = (number) => number * number;
-const squares = numbers.map(square);
+// 1. 関数の実行が終わるまで次の処理に進まない
+// 2. 上から順番に処理される
 
-console.log(squares); // => [25, 9, 16]
+const a = 1;
+const b = 2;
+
+console.log(a + b); // 3
+
+// なぜここで3が出力されるのか？
+// 1. const a = 1; が実行される
+// 2. const b = 2; が実行される
+// 3. console.log(a + b); が実行される
+// 4. 1 + 2 が実行される
+// 5. 3 が出力される
+
+// このように、同期処理の原則により、上から順番に処理される
