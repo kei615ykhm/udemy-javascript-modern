@@ -1,12 +1,9 @@
-// 配列の分割代入
+// オブジェクトの分割代入
 
-// []の中に変数を入れることで、配列の中身を変数に代入できる
-const array = ["Ham", 45, "EggPlants", "Oranges"];
-// ...restで残りの要素を配列として取得できる
-const [nickname, age, ...rest] = array;
+// ｛｝の中にオブジェクトを入れると、オブジェクトのプロパティを変数として取り出すことができる
+const profile = { nickname: "Ham", age: 45 };
+// このコードはnicknameプロパティを取り出して、nicknameという変数に代入している
+const { nickname } = profile;
 
+// nicknameプロパティの値が変数nicknameに代入されている
 console.log(nickname); // Ham
-console.log(age); // 45
-console.log(rest); // ["EggPlants", "Oranges"]
-// rest: 残余要素
-// ...: 残余演算子、残余オペレーター、rest operator
