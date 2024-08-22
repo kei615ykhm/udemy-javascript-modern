@@ -9,3 +9,7 @@ request.send(null);
 // リクエスト URL:https://jsonplaceholder.typicode.com/photos
 // リクエスト メソッド:GET
 // ステータス コード:200 OK
+
+console.log(request);
+
+// コンソールに表示されていれば、リクエストが成功している
