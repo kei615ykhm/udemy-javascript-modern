@@ -1,3 +1,5 @@
+new Promise(() => {});
+
 console.log("start");
 
 setTimeout(() => {
