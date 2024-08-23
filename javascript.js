@@ -1,5 +1,8 @@
 // resolveは成功時の処理、rejectは失敗時の処理
-const Promise = new Promise((resolve, reject) => {});
+const Promise = new Promise((resolve, reject) => {
+  // 時間のかかる処理
+  // resolve("成功");
+});
 console.log(promise);
 
 console.log("start");
