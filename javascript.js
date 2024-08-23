@@ -1,4 +1,5 @@
-new Promise(() => {});
+const Promise = new Promise(() => {});
+console.log(promise);
 
 console.log("start");
 
