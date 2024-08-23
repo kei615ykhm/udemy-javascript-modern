@@ -1,3 +1,4 @@
+// resolveは成功時の処理、rejectは失敗時の処理
 const Promise = new Promise((resolve, reject) => {
   console.log(resolve);
   console.log(reject);
