@@ -1,4 +1,7 @@
-const Promise = new Promise(() => {});
+const Promise = new Promise((resolve, reject) => {
+  console.log(resolve);
+  console.log(reject);
+});
 console.log(promise);
 
 console.log("start");
