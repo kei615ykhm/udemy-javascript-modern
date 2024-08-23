@@ -4,6 +4,7 @@ const Promise = new Promise((resolve, reject) => {
   // resolve("成功");
   setTimeout(() => {
     console.log("1秒経ったよ");
+    resolve("成功");
   }, 1000);
 });
 console.log(promise);
