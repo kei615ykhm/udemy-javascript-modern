@@ -13,6 +13,7 @@ const isClosure = true;
 // `some value`を取り出すために`promise.then`に`value`を入れている
 promise.then((value) => {
   console.log("成功しました");
+  console.log(value);
 });
 
 console.log("start");
