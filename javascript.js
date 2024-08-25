@@ -6,7 +6,8 @@ const sleep = () => {
     }, 1000);
   });
 };
-const promise = new Promise((resolve, reject) => {
+const promise = sleep();
+new Promise((resolve, reject) => {
   // 時間のかかる処理
   // resolve("成功");
   setTimeout(() => {
