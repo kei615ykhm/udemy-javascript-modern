@@ -10,6 +10,7 @@ const Promise = new Promise((resolve, reject) => {
 console.log(promise);
 
 // isClosureはクロージャかどうかを判定するための変数
+// コールバックが実行されるタイミングの状態を読み取ることができる
 const isClosure = true;
 
 // thenメソッドで成功時の処理を記述(resolveが実行されたときに呼ばれる)
