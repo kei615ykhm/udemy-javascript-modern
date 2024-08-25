@@ -7,14 +7,6 @@ const sleep = () => {
   });
 };
 const promise = sleep();
-new Promise((resolve, reject) => {
-  // 時間のかかる処理
-  // resolve("成功");
-  setTimeout(() => {
-    console.log("1秒経ったよ");
-    resolve("some value");
-  }, 1000);
-});
 console.log(promise);
 
 const isClosure = true;
