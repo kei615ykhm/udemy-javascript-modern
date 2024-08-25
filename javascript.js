@@ -14,7 +14,10 @@ const isClosure = true;
 
 // `some value`を取り出すために`promise.then`に`value`を入れている
 promise
-  .then(() => {})
+  .then(() => {
+    // ここでリターンすることによって、次の`then`に`value`を渡すことができる
+    return sleep();
+  })
   // ひとつめの`then`の`value`を使いたくない場合は、`then`をチェインする
   .then(() => {
     console.log("2回目のthen");
