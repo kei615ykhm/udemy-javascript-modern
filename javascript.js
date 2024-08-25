@@ -6,6 +6,7 @@ const sleep = () => {
     }, 1000);
   });
 };
+
 const promise = sleep();
 console.log(promise);
 
