@@ -1,3 +1,11 @@
+const sleep = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("1秒経ったよ");
+      resolve();
+    }, 1000);
+  });
+};
 const promise = new Promise((resolve, reject) => {
   // 時間のかかる処理
   // resolve("成功");
