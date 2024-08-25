@@ -14,11 +14,7 @@ const isClosure = true;
 
 // `some value`を取り出すために`promise.then`に`value`を入れている
 promise
-  .then(() => {
-    setTimeout(() => {
-      console.log("最初のthenの中の1秒経ったよ");
-    }, 1000);
-  })
+  .then(() => {})
   // ひとつめの`then`の`value`を使いたくない場合は、`then`をチェインする
   .then(() => {
     console.log("2回目のthen");
