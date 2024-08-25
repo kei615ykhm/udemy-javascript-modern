@@ -1,5 +1,4 @@
-// resolveは成功時の処理、rejectは失敗時の処理
-const Promise = new Promise((resolve, reject) => {
+const promise = new Promise((resolve, reject) => {
   // 時間のかかる処理
   // resolve("成功");
   setTimeout(() => {
@@ -9,12 +8,8 @@ const Promise = new Promise((resolve, reject) => {
 });
 console.log(promise);
 
-// isClosureはクロージャかどうかを判定するための変数
-// コールバックが実行されるタイミングの状態を読み取ることができる
 const isClosure = true;
 
-// thenメソッドで成功時の処理を記述(resolveが実行されたときに呼ばれる)
-// 副作用として、非同期処理の結果を取得することができる
 promise.then(() => {
   console.log("成功しました");
 });
