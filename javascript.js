@@ -17,7 +17,7 @@ const isClosure = true;
 // 副作用として、非同期処理の結果を取得することができる
 promise.then(() => {
   console.log(value);
-  console.log(isClosure);
+  console.log(promise);
 });
 
 console.log("start");
