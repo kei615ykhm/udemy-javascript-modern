@@ -19,6 +19,14 @@ const sleep = (milliseconds) => {
 
 async function asyncCall() {
   await sleep(900);
+  await sleep(901);
+  await sleep(902);
+  await sleep(903);
+  await sleep(904);
+  await sleep(905);
+  await sleep(906);
 }
+
+asyncCall();
 
 console.log("end");
