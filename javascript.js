@@ -9,12 +9,12 @@ const sleep = (milliseconds) => {
   });
 };
 
-sleep(900)
-  .then(() => sleep(901))
-  .then(() => sleep(902))
-  .then(() => sleep(903))
-  .then(() => sleep(904))
-  .then(() => sleep(905))
-  .then(() => sleep(906));
+// sleep(900)
+//   .then(() => sleep(901))
+//   .then(() => sleep(902))
+//   .then(() => sleep(903))
+//   .then(() => sleep(904))
+//   .then(() => sleep(905))
+//   .then(() => sleep(906));
 
 console.log("end");
