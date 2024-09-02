@@ -17,4 +17,8 @@ const sleep = (milliseconds) => {
 //   .then(() => sleep(905))
 //   .then(() => sleep(906));
 
+async function asyncCall() {
+  await sleep(900);
+}
+
 console.log("end");
