@@ -1,7 +1,7 @@
 console.log("start");
 
 const sleep = () => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       console.log("1秒経ったよ");
       resolve();
@@ -10,14 +10,13 @@ const sleep = () => {
 };
 
 const promise = sleep();
-console.log(promise);
-
-const isClosure = true;
 
 promise
   .then(() => sleep())
-  .then(() => {
-    return sleep();
-  });
+  .then(() => sleep())
+  .then(() => sleep())
+  .then(() => sleep())
+  .then(() => sleep())
+  .then(() => sleep());
 
 console.log("end");
